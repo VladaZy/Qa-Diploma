@@ -72,7 +72,7 @@ public class DebitCardTest {
         PaymentTypesPage page = new PaymentTypesPage();
         page.paymentTypesPage();
         var debitCardPage = page.cardPayment();
-        var invalidCardNumber = DataHelper.GetAShortNumber();
+        var invalidCardNumber = DataHelper.getAShortNumber();
         debitCardPage.cleanFields();
         debitCardPage.fillCardPaymentForm(invalidCardNumber, validMonth, validYear, validOwnerName, validCode);
         debitCardPage.errorFormat();

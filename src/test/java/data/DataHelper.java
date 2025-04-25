@@ -30,7 +30,7 @@ public class DataHelper {
 
     }
 
-    public static String GetAShortNumber() {
+    public static String getAShortNumber() {
         int shortNumber = faker.random().nextInt(16);
         return faker.number().digits(shortNumber);
     }

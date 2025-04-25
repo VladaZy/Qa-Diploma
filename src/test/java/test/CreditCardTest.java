@@ -70,7 +70,7 @@ public class CreditCardTest {
         PaymentTypesPage page = new PaymentTypesPage();
         page.paymentTypesPage();
         var creditCardPage = page.creditPayment();
-        var invalidCardNumber = DataHelper.GetAShortNumber();
+        var invalidCardNumber = DataHelper.getAShortNumber();
         creditCardPage.cleanFields();
         creditCardPage.fillCardPaymentForm(invalidCardNumber, validMonth, validYear, validOwnerName, validCode);
         creditCardPage.errorFormat();
